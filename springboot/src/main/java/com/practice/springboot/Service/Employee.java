@@ -8,4 +8,8 @@ public class Employee {
     public void employeeHelperMethod() {
         System.out.println("Employee constructor");
     }
+
+    public void employeeHelperMethod(String name , Integer id) {
+        System.out.println("Employee constructor :"+name +" - "+id);
+    }
 }

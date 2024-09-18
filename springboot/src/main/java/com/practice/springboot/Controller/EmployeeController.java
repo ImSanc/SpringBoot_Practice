@@ -16,6 +16,7 @@ public class EmployeeController {
     @GetMapping( path = "/fetchEmployee")
     public  String fetchEmploye() {
         employee.employeeHelperMethod();
+        employee.employeeHelperMethod("sanchit",12);
         return "Employee fetched";
     }
 }
