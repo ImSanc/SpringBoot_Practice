@@ -7,8 +7,6 @@ Hspringboot/src/main/java/com/practice/springboot/DTO/PaymentRequest.java,5\5\5
 Rspringboot/src/main/java/com/practice/springboot/Repository/PaymentRepository.java,2\c\2c4c64af4e4ca98865c1d561c758ba41653a72b6
 z
 Jspringboot/src/main/java/com/practice/springboot/Entity/PaymentEntity.java,e\8\e891416a59e38ebd511559eaf65617d4442015d0
-ƒ
-Sspringboot/src/main/java/com/practice/springboot/Controller/RestControllerTest.java,0\9\095e433b322c0c127ba8e07ea46e1a342570cd5f
 ‡
 Wspringboot/src/main/java/com/practice/springboot/Controller/RequestParamController.java,7\7\7788e598537728677d31be1ecff24b18c01f1e86
 ‚

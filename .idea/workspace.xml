@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5d2e00a-305e-4c5f-b58e-8e266fac9f83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/practice/springboot/Aspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/practice/springboot/Controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/practice/springboot/Service/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/095e433b322c0c127ba8e07ea46e1a342570cd5f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/practice/springboot/Properties/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/practice/springboot/Aspects/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/practice/springboot/Aspects/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,5 +92,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/com/practice/springboot/Controller/EmployeeController.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot/src/main/java/com/practice/springboot/Aspects/LoggingAspect.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
