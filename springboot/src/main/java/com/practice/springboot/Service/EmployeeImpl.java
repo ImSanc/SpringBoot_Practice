@@ -30,4 +30,18 @@ public class EmployeeImpl implements EmployeeService{
     public List<Employee> getEmployees(){
         return employees;
     }
+
+    @Override
+    public Employee getEmployeeByID(String employeeId) {
+
+        if( !employeeId.isEmpty() ){
+           var employee = employees.stream().filter(t->t.getEmployeeId().equals(employeeId)).findFirst();
+
+           if(employee.isPresent()){
+               return employee.get();
+           }
+        }
+
+        return null;
+    }
 }

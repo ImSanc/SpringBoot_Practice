@@ -9,4 +9,6 @@ public interface EmployeeService {
     Employee save(Employee employee);
 
     List<Employee> getEmployees();
+
+    Employee getEmployeeByID(String employeeId);
 }
