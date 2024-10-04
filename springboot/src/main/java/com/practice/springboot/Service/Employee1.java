@@ -3,7 +3,7 @@ package com.practice.springboot.Service;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Employee {
+public class Employee1 {
 
     public void employeeHelperMethod() {
         System.out.println("Employee constructor");
