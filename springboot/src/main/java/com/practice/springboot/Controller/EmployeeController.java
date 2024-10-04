@@ -6,6 +6,8 @@ import com.practice.springboot.Service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping( value = "/employees")
 public class EmployeeController {
@@ -27,5 +29,10 @@ public class EmployeeController {
     public Employee saveEmployee(@RequestBody Employee employee)
     {
        return employeeService.save(employee);
+    }
+
+    @GetMapping("/get-Employees")
+    public List<Employee> getEmployee(){
+        return employeeService.getEmployees();
     }
 }

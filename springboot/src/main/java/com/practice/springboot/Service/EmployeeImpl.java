@@ -13,6 +13,7 @@ public class EmployeeImpl implements EmployeeService{
 
     public List<Employee> employees = new ArrayList<>();
 
+    @Override
     public Employee save(Employee employee){
 
         if(employee.getEmployeeId()==null ||
@@ -23,5 +24,10 @@ public class EmployeeImpl implements EmployeeService{
         employees.add(employee);
 
         return  employee;
+    }
+
+    @Override
+    public List<Employee> getEmployees(){
+        return employees;
     }
 }
