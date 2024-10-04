@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping( value = "/v1/employees")
-public class EmployeeController {
+@RequestMapping( value = "/v2/employees")
+public class EmployeeV2Controller {
 
     @Autowired
     Employee1 employee;
@@ -28,7 +28,7 @@ public class EmployeeController {
     @PostMapping("/save")
     public Employee saveEmployee(@RequestBody Employee employee)
     {
-       return employeeService.save(employee);
+        return employeeService.save(employee);
     }
 
     @GetMapping("/get-employees")
