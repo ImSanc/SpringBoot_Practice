@@ -19,4 +19,12 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
         ErrorMessage message = new ErrorMessage(HttpStatus.NOT_FOUND,employeeNotFoundException.getMessage());
         return message;
     }
+
+    @ExceptionHandler(Exception.class)
+    @ResponseBody
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    public ErrorMessage genericErrorHandler(Exception exception){
+
+        return new ErrorMessage(HttpStatus.INTERNAL_SERVER_ERROR,"Internal server error");
+    }
 }

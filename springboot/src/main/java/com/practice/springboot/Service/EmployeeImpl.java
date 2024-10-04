@@ -45,4 +45,14 @@ public class EmployeeImpl implements EmployeeService{
 
         throw  new EmployeeNotFoundException("Employee not found with ID : "+ employeeId);
     }
+
+    @Override
+    public String removeEmployeeById(String employeeId) {
+
+        boolean employeeRemoved = employees.removeIf( employee -> employee.getEmployeeId().equals(employeeId));
+
+        if( employeeRemoved ){
+            return "Employee "+ employeeId + " has been removed";
+        }
+        throw  new EmployeeNotFoundException("Employee not found with ID : "+ employeeId);    }
 }

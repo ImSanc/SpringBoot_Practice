@@ -40,4 +40,10 @@ public class EmployeeController {
     public Employee getEmployeeById(@PathVariable(value = "id") String employeeId){
         return employeeService.getEmployeeByID(employeeId);
     }
+
+    @DeleteMapping("/remove-employee/{id}")
+    public String removeEmployeeById(@PathVariable(value = "id") String employeeId){
+
+        return employeeService.removeEmployeeById(employeeId);
+    }
 }
