@@ -1,6 +1,7 @@
 package com.practice.springboot.Service;
 
 import com.practice.springboot.Entity.Employee;
+import com.practice.springboot.Error.EmployeeNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -42,6 +43,6 @@ public class EmployeeImpl implements EmployeeService{
            }
         }
 
-        return null;
+        throw  new EmployeeNotFoundException("Employee not found with ID : "+ employeeId);
     }
 }
