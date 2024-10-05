@@ -2,6 +2,7 @@ package com.practice.springboot.Service;
 
 import com.practice.springboot.Entity.Employee;
 import com.practice.springboot.Error.EmployeeNotFoundException;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.Random;
 import java.util.UUID;
 
 @Service
+@Primary
 public class EmployeeImpl implements EmployeeService{
 
     public List<Employee> employees = new ArrayList<>();

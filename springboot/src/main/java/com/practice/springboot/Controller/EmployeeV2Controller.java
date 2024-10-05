@@ -4,6 +4,7 @@ import com.practice.springboot.Entity.Employee;
 import com.practice.springboot.Service.Employee1;
 import com.practice.springboot.Service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,6 +17,7 @@ public class EmployeeV2Controller {
     Employee1 employee;
 
     @Autowired
+    @Qualifier(value = "employeeV2Impl")
     private EmployeeService employeeService;
 
     @GetMapping( path = "/fetchEmployee")
